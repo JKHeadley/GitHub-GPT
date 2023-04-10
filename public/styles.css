@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  form {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 1rem;
+  }
+  
+  input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+  }
+  
+  /* Add this at the end of the styles.css file */
+.url-input-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  #github-url {
+    flex: 1;
+    margin-right: 1rem;
+    padding: 0.5rem;
+  }
+  

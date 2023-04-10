@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT-4 Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>GPT-4 Assistant</h1>
+    <!-- Add this inside the body, before the chat container div -->
+    <div class="url-input-container">
+      <label for="github-url">GitHub URL:</label>
+      <input
+        type="text"
+        id="github-url"
+        placeholder="Enter the GitHub repository URL"
+      />
+      <button id="analyze-url">Analyze</button>
+      <button id="train-model" disabled>Train Model</button>
+      <div>
+        <input
+          id="parameter-message-input"
+          type="text"
+          placeholder="Discuss parameters"
+        />
+        <button id="parameter-message-submit">Send</button>
+      </div>
+    </div>
+
+    <div id="suggested-parameters" class="suggested-parameters">
+      Suggested Parameters: <span id="parameters-text"></span>
+    </div>
+
+    <div class="chat-container">
+      <div class="messages" id="messages"></div>
+      <form id="message-form">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message..."
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
