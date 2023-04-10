@@ -27,7 +27,7 @@ parameterMessageForm.addEventListener("click", async (event) => {
   addMessage("User", userMessage);
   parameterMessageInput.value = "";
 
-  const modelId = "text-davinci-002";
+  const modelId = "text-davinci-003";
 
   try {
     const response = await fetch("/generate", {
